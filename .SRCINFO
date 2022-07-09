@@ -1,25 +1,27 @@
 pkgbase = pencil-git
 	pkgdesc = An open-source GUI prototyping tool
-	pkgver = 3.0.3.r167.g043ca48
+	pkgver = 3.1.0.r1553.47b2389
 	pkgrel = 1
 	url = http://pencil.evolus.vn/
 	arch = i686
 	arch = x86_64
 	license = GPL2
 	makedepends = git
-	makedepends = npm
-	depends = electron
-	provides = pencil=3.0.3.r167.g043ca48
+	makedepends = nvm
+	makedepends = jq
+	makedepends = libxcrypt-compat
+	depends = electron15
+	provides = pencil=3.1.0.r1553.47b2389
 	conflicts = pencil
 	replaces = evolus-pencil-git
 	replaces = evolus-pencil-svn
 	replaces = evolus-pencil-devel-git
 	replaces = evolus-pencil-git-dev-branch
-	source = pencil::git+https://github.com/evolus/pencil.git#branch=development
+	source = git+https://github.com/evolus/pencil.git#branch=development
 	source = pencil.desktop
-	source = pencil.sh
-	md5sums = SKIP
-	md5sums = 25b8e3921c596da71720cd5feb9c04b7
-	md5sums = e72976807104a384ed291f239df2d77f
+	source = pencil.xml
+	sha256sums = SKIP
+	sha256sums = c19b8aad227b712e363b1443efb7ab34616f321023d0e8cf311bfe168a2858c1
+	sha256sums = 7b9ea81e48f5c3967758b9d56788adfdfc89041f4a2d67ae261281763392c787
 
 pkgname = pencil-git
